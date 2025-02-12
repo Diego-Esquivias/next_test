@@ -2,7 +2,12 @@
 const nextConfig = {
     reactStrictMode: true,
     images: {
-        domains: ['images-na.ssl-images-amazon.com'],
+        remotePatterns: [{
+            protocol: 'https',
+            hostname: 'res.cloudinary.com',
+            port: '',
+            search: ''
+        }]
     }
 };
 
